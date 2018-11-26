@@ -40,8 +40,8 @@ void draw() {
       float sz = (brightness(c)/255.0)*videoScale;
       rectMode(CENTER);
       fill(255);
-
-      rect(x, y, videoScale, videoScale);
+      noStroke();
+      rect(x+videoScale/2, y+videoScale/2, sz, sz);
     }
   }
 }
