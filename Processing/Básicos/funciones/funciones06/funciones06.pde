@@ -1,20 +1,25 @@
+//Funcion 06
+
 void setup() {
-  size(600, 600);
+  //tamaño del sketch
+  size(100, 100);
 }
 
 void draw() {
-  for (int i = 20; i < width; i+=20) {
-    for (int j = 20; j< height; j+=20) {
-      particula(i, j);
-    }
-  }
+  /*
+  Otro tipo de funcion, en esta se llama a la funcion, se realiza la operacion
+  y regresa como un resultado, para despues de ser mostrada en la consola
+  */
+  println(suma(10,5));
 }
 
-void particula(float xPos, float yPos) {
-  float r = random(5, 15);
-  ellipse(xPos, yPos, r, r);
-  ellipse(xPos-r, yPos, r/2, r/2);
-  ellipse(xPos+r, yPos, r/2, r/2);
-  ellipse(xPos, yPos-r, r/2, r/2);
-  ellipse(xPos, yPos+r, r/2, r/2);
+//funcion
+int suma(int a, int b) {
+//instruccion ejecutada dentro de la funcion
+  
+  //regresar este resultado a draw() = a + b = 10 + 5 = 15 
+  return a+b;
+  
 }
+
+//Live version - https://www.openprocessing.org/sketch/654445
