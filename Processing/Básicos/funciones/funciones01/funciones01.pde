@@ -13,7 +13,7 @@ void draw() {
 }
 
 //funcion con los valores (tipo de variable + nombre de la variable)
-void particula(float xPos, float yPos) {
+void particula(int xPos, int yPos) {
   
   //instruccion que se ejecuta dentro de la funcion en conjuncion con los valores
   ellipse(xPos, yPos,100,100);
