@@ -23,6 +23,7 @@ void draw() {
   for (int i = 0; i < part.length; i++) {
     //objeto[indice / de 0 a 100].metodo();
     part[i].display();
+    part[i].move();
   }
 }
 
