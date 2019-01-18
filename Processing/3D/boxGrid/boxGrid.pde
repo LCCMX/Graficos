@@ -20,7 +20,7 @@ void draw(){
   //Centrar el punto(0,0) a las coordenadas de translate y la profundidad del eje Z
   //-400/2 = -200
   translate(width/2, height/2, -depth/2);
-  //Rotacion de los ejes X y Y, estos van de acuerdo al frameRate
+  //Rotacion de los ejes X y Y, estos van de acuerdo al frameRate, asi es como el cubo dara vueltas
   rotateY(frameCount*PI/60);
   rotateX(frameCount*PI/60);
 
