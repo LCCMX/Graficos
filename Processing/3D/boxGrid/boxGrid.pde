@@ -24,16 +24,16 @@ void draw(){
   rotateY(frameCount*PI/60);
   rotateX(frameCount*PI/60);
 
-  //Loop para el eje X donde se mostraran las cajas serie horizontal
+  //Loop para el eje X donde se mostraran las cajas en serie horizontal
   for (float i=-depth/2+margin; i<=depth/2-margin; i+=boxSize){
     pushMatrix();
     //Loop para el eje Y donde se mostraran las cajas en serie vertical
     for (float j=-height/2+margin; j<=height/2-margin; j+=boxSize){
       pushMatrix();
-      //Loop para hacer el cubo de cajas dandole profundida
+      //Loop para el eje Z donde se mostraran las cajas en profundidad
       for (float k=-width/2+margin; k<=width/2-margin; k+=boxSize){
         // valores de los canales de color
-				//abs() convierte los numeros flotantes a valores absolutos, 1.02 = 1
+	//abs() convierte los numeros flotantes a valores absolutos, 1.02 = 1
         boxFill = color(abs(i), abs(j), abs(k), 50);
         //Fijacion de la matriz
         pushMatrix();
